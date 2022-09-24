@@ -4,8 +4,11 @@ An Arduino based RFID safety switch for my workshop that cuts entire AC power to
 [![My workshop just got a lot safer with this RFID safety switch!](https://img.youtube.com/vi/r55_TXjPetM/0.jpg)](https://www.youtube.com/watch?v=r55_TXjPetM)
 
 
-# Background
+## Background
 Since my kids enter my workshop even when I'm not there, I wanted to have a way to kill power to the outlets so that even if there is a power tool plugged in, they can't switch it on and possibly injure themselves. 
+
+## How it works
+The switch is controlled by an Arduino Nano that interfaces the Reyax RYRR10S RFID and NFC module. When a valid card is detected, the Arduino turns on a relay, that turns on a contactor to provide power to all of the outlets in the workshop. The power can be turned off at any time by swiping a card again or it will be turned off automatically after a set period of time if I have left the workshop in the meantime. 
 
 ## Tools and materials required
 - Arduino Nano: https://s.click.aliexpress.com/e/_DCQ73YF
